@@ -30,3 +30,83 @@ nav a {
     text-decoration: none;
     color: #fff;
 }
+.rounded_text{
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: darkgray;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 10;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+/* list rule definition */
+.list li {
+    padding: 25px 10px;
+    display: block;
+    width: 100%;
+    margin: 1px;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #efeeee 0%, #e8e7e7 100%);
+}
+
+.list {
+    top: 1em;
+    left: 0;
+    list-style-type: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.list li:hover {
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #dedbdb 0%, #efeeee 100%);
+}
+.list-text{
+    padding: 5px 10px;
+}
+.list-statistic-tomato{
+    background-color: tomato;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    float: right;
+}
+.list-statistic-orange{
+    background-color: steelblue;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    float: right;
+}
+.list-cancer{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.list-cancer li{
+    padding: 10px;
+    display: block;
+}

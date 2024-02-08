@@ -1,7 +1,67 @@
 {% extends 'template.html' %}
 {% load static %}
 {% block maincontent %}
-    <h1 style="color:tomato;">Index</h1>
-    <p style="background-color: purple; color:white"> Here is the about page </p>
+    <main class="flex-container">
+        <div class="flex-item-20 shadow" style="background-color: whitesmoke;padding: 3px">
+            <h1 class="rounded_text"> List of studies </h1>
+            <ul class="list">
+                <li>
+                    <span class="list-text">      Pancancer Study           </span>
 
+                    <span class="list-statistic-tomato tooltip">
+                        <span class="tooltiptext">number of sample</span>
+                        5
+                    </span>
+
+                    <span class="list-statistic-orange tooltip">
+                        <span class="tooltiptext">number of sample</span>
+                        10
+                    </span>
+                </li>
+                <li>Kidney</li>
+                <li>Brain</li>
+                <li>Breast</li>
+                <li>Pancancer study</li>
+            </ul>
+        </div>
+        <div class="flex-item-80">
+                <button class="tablink" onclick="openPage('Home', this, 'SteelBlue')" id="defaultOpen">Home</button>
+                <button class="tablink" onclick="openPage('News', this, 'SteelBlue')" >News</button>
+                <button class="tablink" onclick="openPage('Contact', this, 'SteelBlue')">Contact</button>
+
+                <div id="Home" class="tabcontent">
+                    <h3>Pancancer list</h3>
+                    <h4>Pancancer sub category</h4>
+                    <hr>
+                    <ul class="list-cancer">
+                        <li>
+                            <input name="" type="checkbox" />
+                            <label > Cancer 1 </label>
+
+                        </li>
+                        <li>
+                            <input name="" type="checkbox" />
+                            <label > Cancer 1 </label>
+
+                        </li>
+                        <li>
+                            <input name="" type="checkbox" />
+                            <label > Cancer 1 </label>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div id="News" class="tabcontent">
+                    <h3>News</h3>
+                    <p>Some news this fine day!</p>
+                </div>
+
+                <div id="Contact" class="tabcontent">
+                    <h3>Contact</h3>
+                    <p>Get in touch, or swing by for a cup of coffee.</p>
+                </div>
+        </div>
+    </main>
 {% endblock %}
