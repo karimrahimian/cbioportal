@@ -4,24 +4,13 @@
     <main class="flex-container">
         <div class="flex-item-20 shadow" style="background-color: whitesmoke;padding: 3px">
             <h1 class="rounded_text"> List of studies </h1>
+
             <ul class="list">
-                <li>
-                    <span class="list-text">      Pancancer Study           </span>
-
-                    <span class="list-statistic-tomato tooltip">
-                        <span class="tooltiptext">number of sample</span>
-                        5
-                    </span>
-
-                    <span class="list-statistic-orange tooltip">
-                        <span class="tooltiptext">number of sample</span>
-                        10
-                    </span>
-                </li>
-                <li>Kidney</li>
-                <li>Brain</li>
-                <li>Breast</li>
-                <li>Pancancer study</li>
+                {% for study_type in study_types %}
+                    <li>
+                        {{ study_type.name }}
+                    </li>
+                {% endfor %}
             </ul>
         </div>
         <div class="flex-item-80">
