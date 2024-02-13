@@ -4,42 +4,52 @@
     <main class="flex-container">
         <div class="flex-item-20 shadow" style="background-color: whitesmoke;padding: 3px">
             <h1 class="rounded_text"> List of studies </h1>
-
             <ul class="list">
                 {% for study_type in study_types %}
                     <li>
-                        {{ study_type.name }}
+                        <a href="{% url 'index' %}?study_type_id={{study_type.study_type_id}}">
+                            <span class="list-text">   {{ study_type.name }}   </span>
+                                <span class="list-statistic-tomato tooltip">
+                                    <span class="tooltiptext">number of study</span>
+                                    {{ study_type.study_count }}
+                                </span>
+                        </a>
                     </li>
                 {% endfor %}
             </ul>
         </div>
+
         <div class="flex-item-80">
-                <button class="tablink" onclick="openPage('Home', this, 'SteelBlue')" id="defaultOpen">Home</button>
-                <button class="tablink" onclick="openPage('News', this, 'SteelBlue')" >News</button>
+                <button class="tablink" onclick="openPage('Home', this, 'SteelBlue')">Home</button>
+                <button class="tablink" onclick="openPage('News', this, 'SteelBlue')"  id="defaultOpen" >News</button>
                 <button class="tablink" onclick="openPage('Contact', this, 'SteelBlue')">Contact</button>
 
-                <div id="Home" class="tabcontent">
-                    <h3>Pancancer list</h3>
-                    <h4>Pancancer sub category</h4>
-                    <hr>
-                    <ul class="list-cancer">
-                        <li>
-                            <input name="" type="checkbox" />
-                            <label > Cancer 1 </label>
-
-                        </li>
-                        <li>
-                            <input name="" type="checkbox" />
-                            <label > Cancer 1 </label>
-
-                        </li>
-                        <li>
-                            <input name="" type="checkbox" />
-                            <label > Cancer 1 </label>
-
-                        </li>
-
-                    </ul>
+                <div id="Home" class="tabcontent" >
+                    <h3>All study </h3>
+                    {% regroup studies by study_type.name as grouped_study_type %}
+                    {% for group in grouped_study_type  %}
+                        <h4>{{ group.grouper }}</h4>
+                        <hr>
+                        <ul>
+                            {% for item in group.list %}
+                                <li class="list-cancer">
+                                    <div>
+                                        <label style="cursor: pointer;">
+                                            <input type="radio" name="{item.id}">
+                                            {{ item.name }}
+                                            <span style="float:right;color:tomato;font-style: oblique;">
+                                                {{ item.sample_count }}
+                                            </span>
+                                            <span style="float: right;">
+                                                <i class="fa fa-address-card" aria-hidden="true"></i>
+                                                samples:
+                                            </span>
+                                        </label>
+                                    </div>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endfor %}
                 </div>
 
                 <div id="News" class="tabcontent">
@@ -50,6 +60,10 @@
                 <div id="Contact" class="tabcontent">
                     <h3>Contact</h3>
                     <p>Get in touch, or swing by for a cup of coffee.</p>
+                </div>
+                <div style="padding: 10px;">
+                    <button type="submit" class="button button3"> Analysis this data </button>
+
                 </div>
         </div>
     </main>

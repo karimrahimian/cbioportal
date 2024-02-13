@@ -1,0 +1,27 @@
+/* Card container */
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 25%;
+    margin: 20px auto;
+    position: relative;
+    background-color: #f9f9f9;
+  }
+
+  /* Title */
+  .card-title {
+    font-size: 12px;
+    font-weight: bold;
+    height: 30px;
+    padding: 10px;
+    text-align: left;
+    background-color: #8BC6EC;
+  }
+
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+  }

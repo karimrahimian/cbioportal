@@ -25,7 +25,9 @@ nav ul {
 nav ul li {
     margin-right: 1em;
 }
-
+a{
+    text-decoration: none;
+}
 nav a {
     text-decoration: none;
     color: #fff;
@@ -105,6 +107,7 @@ nav a {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
+    cursor: pointer;
 }
 .list-cancer li{
     padding: 10px;
@@ -121,6 +124,37 @@ footer {
     align-items: center;
 }
 .image-size-small{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+}
+.rounded-image{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */
+.button4 {background-color: #e7e7e7; color: black;} /* Gray */
+.button5 {background-color: #555555;} /* Black */
+
+input[type='radio']{
+    width: 15px;
+    height: 15px;
+}
+
+.container-flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }

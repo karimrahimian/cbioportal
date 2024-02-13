@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9f7fb05-30d0-47a2-ae31-0ea42f3d5214" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/variation/generate_fake_data/faker_bio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/cards.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/tables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variation/templates/analysis.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variation/generate_fake_data/faker_bio.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/generate_fake_data/faker_bio.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/variation/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variation/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/views.py" afterDir="false" />
     </list>
@@ -23,11 +28,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="TypeScript File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="Python Script" />
+        <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -168,7 +173,7 @@
       <workItem from="1707329448980" duration="192000" />
       <workItem from="1707329651999" duration="32000" />
       <workItem from="1707329747734" duration="21600000" />
-      <workItem from="1707504722927" duration="23493000" />
+      <workItem from="1707504722927" duration="47872000" />
     </task>
     <servers />
   </component>
@@ -182,6 +187,26 @@
           <url>file://$PROJECT_DIR$/variation/tests.py</url>
           <line>17</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/views.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/generate_fake_data/faker_bio.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/generate_fake_data/faker_bio.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/generate_fake_data/faker_bio.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
