@@ -3,6 +3,9 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 25%;
+    height: 200px;
+    overflow: scroll;
+
     margin: 20px auto;
     position: relative;
     background-color: #f9f9f9;

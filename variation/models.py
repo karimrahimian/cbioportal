@@ -48,7 +48,10 @@ class SNP_Mutation(models.Model):
     gene = models.ForeignKey(Gene,on_delete=models.CASCADE)
     sample = models.ForeignKey(Sample,on_delete=models.CASCADE)
     molecular_profile = models.ForeignKey(MoleculeProfile,on_delete=models.CASCADE)
-
+class Snpmutant(models.Model):
+    gene = models.ForeignKey(Gene,on_delete=models.CASCADE)
+    sample = models.ForeignKey(Sample,on_delete=models.CASCADE)
+    molecular_profile = models.ForeignKey(MoleculeProfile,on_delete=models.CASCADE)
 class StudySample(models.Model):
     sample = models.ForeignKey(Sample,on_delete=models.CASCADE)
     study = models.ForeignKey(Study,on_delete=models.CASCADE)

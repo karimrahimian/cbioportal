@@ -32,10 +32,12 @@
                         <hr>
                         <ul>
                             {% for item in group.list %}
+                                <form action="{% url 'analysis' %}" method="post">
+                                {% csrf_token %}
                                 <li class="list-cancer">
                                     <div>
                                         <label style="cursor: pointer;">
-                                            <input type="radio" name="{item.id}">
+                                            <input type="radio" name="study_id" value="{{item.id}}">
                                             {{ item.name }}
                                             <span style="float:right;color:tomato;font-style: oblique;">
                                                 {{ item.sample_count }}
@@ -63,8 +65,8 @@
                 </div>
                 <div style="padding: 10px;">
                     <button type="submit" class="button button3"> Analysis this data </button>
-
                 </div>
+            </form>
         </div>
     </main>
 {% endblock %}

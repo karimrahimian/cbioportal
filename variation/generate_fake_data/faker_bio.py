@@ -1,7 +1,7 @@
 from django.db.models import Max
 
 from ..models import Patient, Gene, Tissue, Organ, SampleType, Sample, MoleculeProfile, SNP_Mutation, Study, \
-    CancertType, StudySample
+    CancertType, StudySample, Snpmutant
 import string
 import random
 class FakerCbiooprtal():
@@ -45,7 +45,7 @@ class FakerCbiooprtal():
             sample = Sample.objects.get(id=random.randint(1, count_sample['id__max']))
             molecule = MoleculeProfile.objects.get(id=random.randint(1, count_molecule['id__max']))
             gene = Gene.objects.get(id=random.randint(1, count_gene['id__max']))
-            mutanted_gene = SNP_Mutation (sample=sample,molecular_profile=molecule,gene=gene)
+            mutanted_gene = SNPMutant (sample=sample,molecular_profile=molecule,gene=gene)
             mutanted_gene.save()
 
     def generate_study_sample(self,count):

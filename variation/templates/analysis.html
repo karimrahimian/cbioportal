@@ -3,163 +3,22 @@
 {% block maincontent %}
     <div class="container-flex-wrap">
         <div class="card">
-              <div class="card-title">Card Title</div>
+              <div class="card-title">Snp mutant</div>
               <div class="close-btn" onclick="this.parentElement.style.display='none';">&times;</div>
-              <table>
-              <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Points</th>
-              </tr>
-              <tr>
-                <td>Jill</td>
-                <td>Smith</td>
-                <td>50</td>
-              </tr>
-              <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
-              </tr>
-              <tr>
-                <td>Adam</td>
-                <td>Johnson</td>
-                <td>67</td>
-              </tr>
-            </table>
-        </div>
-        <div class="card">
-          <div class="card-title">Card Title</div>
-          <div class="close-btn" onclick="this.parentElement.style.display='none';">&times;</div>
-          <table>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Points</th>
-          </tr>
-          <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-          </tr>
-          <tr>
-            <td>Adam</td>
-            <td>Johnson</td>
-            <td>67</td>
-          </tr>
-        </table>
-        </div>
-        <div class="card">
-          <div class="card-title">Card Title</div>
-          <div class="close-btn" onclick="this.parentElement.style.display='none';">&times;</div>
-          <table>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Points</th>
-          </tr>
-          <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-          </tr>
-          <tr>
-            <td>Adam</td>
-            <td>Johnson</td>
-            <td>67</td>
-          </tr>
-        </table>
-        </div>
-        <div class="card">
-          <div class="card-title">Card Title</div>
-          <div class="close-btn" onclick="this.parentElement.style.display='none';">&times;</div>
-          <table>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Points</th>
-          </tr>
-          <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-          </tr>
-          <tr>
-            <td>Adam</td>
-            <td>Johnson</td>
-            <td>67</td>
-          </tr>
-        </table>
-        </div>
-        <div class="card">
-          <div class="card-title">Card Title</div>
-          <div class="close-btn" onclick="this.parentElement.style.display='none';">&times;</div>
-          <table>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Points</th>
-          </tr>
-          <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-          </tr>
-          <tr>
-            <td>Adam</td>
-            <td>Johnson</td>
-            <td>67</td>
-          </tr>
-        </table>
-        </div>
-        <div class="card">
-          <div class="card-title">Card Title</div>
-          <div class="close-btn" onclick="this.parentElement.style.display='none';">&times;</div>
-          <table>
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Points</th>
-          </tr>
-          <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-          </tr>
-          <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-          </tr>
-          <tr>
-            <td>Adam</td>
-            <td>Johnson</td>
-            <td>67</td>
-          </tr>
-        </table>
+                  <table>
+                      <tr>
+                        <th>Gene Name</th>
+                        <th>Sample</th>
+                      </tr>
+                      {% for mutant in snpmutant %}
+                          <tr>
+                            <td>{{mutant.0}}</td>
+                            <td>{{mutant.1}}</td>
+                          </tr>
+                      {% endfor %}
+                 </table>
         </div>
     </div>
-
 {% endblock %}
 <!--    <div class="container">
         <div class="flex-item-25">
