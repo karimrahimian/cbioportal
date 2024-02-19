@@ -43,6 +43,13 @@ def analysis(request):
         graph = Graph()
         context['sexpie'] = graph.pie_plot_patient(patinetdata,"Sex","Sex")
         context['racepie'] = graph.pie_plot_patient(patinetdata,"Race","Race")
+        context['agebar'] = graph.bar_plot_patient(patinetdata,"Age","Age")
         context['snpmutant'] = snp[::-1]
+        patinetdata = Sample.objects.filter(pk__in=sample_ids).values_list('patient_id', 'patient__age','patient__sex','patient__race','patient__code',
+                                                                      'tissue__name','organ__name','sample_type__sample_type').distinct()
+        context['dataset'] = patinetdata
+
+        tt= 1
+
 
    return render(request,'analysis.html',context=context)

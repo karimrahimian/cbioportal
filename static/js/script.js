@@ -14,3 +14,31 @@ function openPage(pageName,elmnt,color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+function hideStatisticDiv() {
+  var x = document.getElementById("static");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+function hideDatasetDiv() {
+  var x = document.getElementById("dataset");
+  if (x.style.display === "none") {
+    x.style.display = "flex";
+  } else {
+    x.style.display = "none";
+  }
+}
+function toggleDiv(element){
+    if (element==="dataset"){
+         document.getElementById("dataset").style.display="block";
+         document.getElementById("static").style.display="none";
+    }else{
+         document.getElementById("dataset").style.display="none";
+         document.getElementById("static").style.display="flex";
+
+    }
+
+}

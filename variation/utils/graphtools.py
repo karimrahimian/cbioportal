@@ -33,5 +33,21 @@ class Graph():
         labels = df.index.tolist()
         values = ff
         pie_plot = gogo.Pie(labels=labels, values=values)
-        plot_div = plot({'data': pie_plot, 'layout': self.layout}, output_type='div',image_height=50)
+        plot_div = plot({'data': pie_plot, 'layout': self.layout}, output_type='div',image_width=100)
+        return plot_div
+    def bar_plot_patient(self, pie_data_from_django,title,attribute):
+        df = pd.DataFrame(list(pie_data_from_django))
+        df.columns = ['Age', 'Sex', 'Race']
+        df = df.groupby(attribute).size()
+        self.layout['title'] = title
+
+        self.layout['xaxis_title'] = "Age"
+        self.layout['yaxis_title'] = "Frequency"
+
+        ff = df.to_numpy()
+        print("Gene {}".format(title))
+        labels = df.index.tolist()
+        values = ff
+        pie_plot = gogo.Bar(x=labels,y=values)
+        plot_div = plot({'data': pie_plot, 'layout': self.layout}, output_type='div')
         return plot_div

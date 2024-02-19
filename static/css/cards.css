@@ -2,10 +2,10 @@
   .card {
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 33.33%;
+    width: 25%;
     height: 500px;
     overflow: scroll;
-
+    overflow-x: hidden;
     margin: 20px auto;
     position: relative;
     background-color: #f9f9f9;

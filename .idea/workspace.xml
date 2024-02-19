@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9f7fb05-30d0-47a2-ae31-0ea42f3d5214" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/variation/utils/graphtools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variation/templates/dataset.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/cards.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/templates/analysis.html" beforeDir="false" afterPath="$PROJECT_DIR$/variation/templates/analysis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variation/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variation/utils/graphtools.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/utils/graphtools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,9 +27,9 @@
       <list>
         <option value="TypeScript File" />
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -47,7 +48,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.cbioportal.executor": "Run",
+    "Django Server.cbioportal.executor": "Debug",
     "Python.tests.executor": "Debug",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -170,7 +171,7 @@
       <workItem from="1707329651999" duration="32000" />
       <workItem from="1707329747734" duration="21600000" />
       <workItem from="1707504722927" duration="72699000" />
-      <workItem from="1708199784644" duration="15292000" />
+      <workItem from="1708199784644" duration="27316000" />
     </task>
     <servers />
   </component>
@@ -208,8 +209,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/variation/views.py</url>
-          <line>41</line>
-          <option name="timeStamp" value="14" />
+          <line>54</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/views.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
