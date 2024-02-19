@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from .generate_fake_data.faker_bio import FakerCbiooprtal
 from .models import StudyType, Study, StudySample, SNP_Mutation, Sample, Snpmutant
-
+from .utils.graphtools import Graph
 
 # Create your views here.
 def index(request):
@@ -27,7 +27,7 @@ def generate_data(request):
     return HttpResponse("All data generated")
 
 def analysis(request):
-   context = {"snpmutant":None}
+   context = {"snpmutant":None,'sexpie':None}
    if request.method == 'POST':
         study_id = (request.POST['study_id'])
         sample_id = list(StudySample.objects.filter(study_id=study_id).values_list('sample_id').all())
@@ -36,6 +36,13 @@ def analysis(request):
                                 select_related('gene').
                                 values_list('gene__gene_name').
                                 annotate(count_sample=Count('gene')).order_by('count_sample'))
+        sample_ids = []
+        for id in sample_id:
+            sample_ids.append(id[0])
+        patinetdata = Sample.objects.filter(pk__in=sample_ids).select_related('patient_id').values_list('patient__age','patient__sex','patient__race')
+        graph = Graph()
+        context['sexpie'] = graph.pie_plot_patient(patinetdata,"Sex","Sex")
+        context['racepie'] = graph.pie_plot_patient(patinetdata,"Race","Race")
         context['snpmutant'] = snp[::-1]
 
    return render(request,'analysis.html',context=context)

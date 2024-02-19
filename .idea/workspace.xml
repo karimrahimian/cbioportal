@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9f7fb05-30d0-47a2-ae31-0ea42f3d5214" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/variation/utils/graphtools.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/cards.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variation/generate_fake_data/faker_bio.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/generate_fake_data/faker_bio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variation/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/templates/analysis.html" beforeDir="false" afterPath="$PROJECT_DIR$/variation/templates/analysis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variation/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/variation/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variation/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,9 +26,9 @@
       <list>
         <option value="TypeScript File" />
         <option value="JavaScript File" />
-        <option value="Python Script" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -169,21 +169,28 @@
       <workItem from="1707329448980" duration="192000" />
       <workItem from="1707329651999" duration="32000" />
       <workItem from="1707329747734" duration="21600000" />
-      <workItem from="1707504722927" duration="69923000" />
+      <workItem from="1707504722927" duration="72699000" />
+      <workItem from="1708199784644" duration="15292000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/variation/tests.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/variation/generate_fake_data/faker_bio.py</url>
           <line>19</line>
@@ -199,10 +206,15 @@
           <line>51</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/views.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/cbioportal$tests.coverage" NAME="tests Coverage Results" MODIFIED="1707641975414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/variation" />
+    <SUITE FILE_PATH="coverage/cbioportal$tests.coverage" NAME="tests Coverage Results" MODIFIED="1708338556983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/variation" />
   </component>
 </project>

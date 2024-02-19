@@ -18,6 +18,20 @@
                       {% endfor %}
                  </table>
         </div>
+        <div class="card">
+              <div class="card-title">Sex Ratio</div>
+              <div class="close-btn" onclick="this.parentElement.style.display='none';">&times;</div>
+                {% autoescape off %}
+                    {{ sexpie }}
+                {% endautoescape %}
+        </div>
+        <div class="card">
+              <div class="card-title">Race Ratio</div>
+              <div class="close-btn" onclick="this.parentElement.style.display='none';">&times;</div>
+                {% autoescape off %}
+                    {{ racepie }}
+                {% endautoescape %}
+        </div>
     </div>
 {% endblock %}
 <!--    <div class="container">
