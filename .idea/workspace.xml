@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9f7fb05-30d0-47a2-ae31-0ea42f3d5214" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/variation/middleware.py" afterDir="false" />
+    <list default="true" id="a9f7fb05-30d0-47a2-ae31-0ea42f3d5214" name="Changes" comment="add middleware basic auth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cbioportal/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cbioportal/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variation/middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/cbioportal/custome_middleware.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,11 +71,11 @@
       <recent name="C:\Users\karim\PycharmProjects\cbioportal\variation\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\karim\PycharmProjects\cbioportal\cbioportal" />
       <recent name="C:\Users\karim\PycharmProjects\cbioportal\static" />
       <recent name="C:\Users\karim\PycharmProjects\cbioportal\static\variation" />
       <recent name="C:\Users\karim\PycharmProjects\cbioportal\static\cbioportal" />
       <recent name="C:\Users\karim\PycharmProjects\cbioportal" />
-      <recent name="C:\Users\karim\PycharmProjects\cbioportal\variation\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Django Server.cbioportal">
@@ -168,8 +168,17 @@
       <workItem from="1707329747734" duration="21600000" />
       <workItem from="1707504722927" duration="72699000" />
       <workItem from="1708199784644" duration="28470000" />
-      <workItem from="1708448531316" duration="1714000" />
+      <workItem from="1708448531316" duration="6119000" />
     </task>
+    <task id="LOCAL-00001" summary="add middleware basic auth">
+      <option name="closed" value="true" />
+      <created>1708450674560</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708450674560</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +194,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add middleware basic auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="add middleware basic auth" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -206,33 +219,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/variation/views.py</url>
-          <line>55</line>
+          <line>57</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/variation/views.py</url>
-          <line>50</line>
+          <line>52</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/variation/middleware.py</url>
-          <line>7</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/variation/views.py</url>
-          <line>58</line>
+          <line>61</line>
           <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/variation/middleware.py</url>
-          <line>5</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/variation/urls.py</url>
-          <line>11</line>
-          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

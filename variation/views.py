@@ -2,6 +2,8 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Count, Sum
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
+
 from .generate_fake_data.faker_bio import FakerCbiooprtal
 from .models import StudyType, Study, StudySample, SNP_Mutation, Sample, Snpmutant
 from .utils.graphtools import Graph
@@ -54,9 +56,10 @@ def analysis(request):
 
 
    return render(request,'analysis.html',context=context)
-
+@csrf_exempt
 def queryApi(request):
-    return HttpResponse('Salam');
+    print("Salam")
+    return HttpResponse('Salam')
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
