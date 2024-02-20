@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.db.models import Count, Sum
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -53,3 +54,9 @@ def analysis(request):
 
 
    return render(request,'analysis.html',context=context)
+
+def queryApi(request):
+    return HttpResponse('Salam');
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']

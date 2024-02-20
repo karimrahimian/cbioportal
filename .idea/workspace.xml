@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9f7fb05-30d0-47a2-ae31-0ea42f3d5214" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/variation/templates/dataset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/variation/middleware.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/cards.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/tabs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variation/templates/analysis.html" beforeDir="false" afterPath="$PROJECT_DIR$/variation/templates/analysis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variation/utils/graphtools.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/utils/graphtools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +24,8 @@
         <option value="TypeScript File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -171,7 +167,8 @@
       <workItem from="1707329651999" duration="32000" />
       <workItem from="1707329747734" duration="21600000" />
       <workItem from="1707504722927" duration="72699000" />
-      <workItem from="1708199784644" duration="27316000" />
+      <workItem from="1708199784644" duration="28470000" />
+      <workItem from="1708448531316" duration="1714000" />
     </task>
     <servers />
   </component>
@@ -209,13 +206,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/variation/views.py</url>
-          <line>54</line>
+          <line>55</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/variation/views.py</url>
-          <line>49</line>
+          <line>50</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/middleware.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/views.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/middleware.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/urls.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
