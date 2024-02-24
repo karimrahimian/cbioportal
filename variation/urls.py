@@ -9,5 +9,8 @@ urlpatterns = [
     path('register',views.login,name='register'),
     path('generate_data',views.generate_data,name='generate_data'),
     path('analysis',views.analysis,name='analysis'),
-    path('queryapi',views.queryApi,name='queryapi')
+    path('queryapi',views.queryApi,name='queryapi'),
+    path('tissuelist',views.tissuelist,name='tissuelist'),
+    path('api',views.api,name='api')
 ]
+print (urlpatterns)

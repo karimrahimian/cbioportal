@@ -8,7 +8,7 @@ class BasicAuthenticationMiddleware:
         self.get_response = get_response
 
     def __call__(self, request):
-        if request.path.startswith('/queryapi'):
+        if request.path.startswith('/tissuelist') or request.path.startswith('/api'):
             if 'HTTP_AUTHORIZATION' in request.META:
                 auth = request.META['HTTP_AUTHORIZATION'].split()
                 if len(auth) == 2 and auth[0].lower() == 'basic':
@@ -16,7 +16,9 @@ class BasicAuthenticationMiddleware:
                     user = authenticate(username=username, password=password)
                     if user is not None:
                         request.user = user
-                    return self.get_response(request)
+                        return self.get_response(request)
+                    else:
+                        return HttpResponse(status=401)
             else:
                 return HttpResponse(status=401)
         else:
