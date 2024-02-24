@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a9f7fb05-30d0-47a2-ae31-0ea42f3d5214" name="Changes" comment="add all commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cbioportal/custome_middleware.py" beforeDir="false" afterPath="$PROJECT_DIR$/cbioportal/custome_middleware.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +167,7 @@
       <workItem from="1707504722927" duration="72699000" />
       <workItem from="1708199784644" duration="28470000" />
       <workItem from="1708448531316" duration="9683000" />
-      <workItem from="1708623444328" duration="18436000" />
+      <workItem from="1708623444328" duration="23789000" />
     </task>
     <task id="LOCAL-00001" summary="add middleware basic auth">
       <option name="closed" value="true" />
@@ -236,6 +234,21 @@
           <url>file://$PROJECT_DIR$/variation/views.py</url>
           <line>79</line>
           <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/views.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/views.py</url>
+          <line>123</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/views.py</url>
+          <line>94</line>
+          <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

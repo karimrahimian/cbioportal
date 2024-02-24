@@ -102,21 +102,27 @@ def api(request):
         sample_type = data['sampleType']
         if age_from and age_to:
             query &= Q(patient__age__range=(age_from,age_to))
+        if race :
             query &= Q(patient__race__in = race)
+        if gender:
             query &= Q(patient__sex__in = gender)
+        if organ_name:
             query &= Q(organ__name__in = organ_name)
-            patinetdata = Sample.objects.filter(query).values_list('patient_id', 'patient__age', 'patient__sex',
-                                                      'patient__race', 'patient__code',
-                                                      'tissue__name', 'organ__name',
-                                                      'sample_type__sample_type').distinct()
-            response = HttpResponse(content_type='text/csv')
-            response['Content-Disposition'] = 'attachment;filename="patientdata.csv"'
-            field_names = ['patient_id', 'patient__age', 'patient__sex',
-                                                      'patient__race', 'patient__code',
-                                                      'tissue__name', 'organ__name',
-                                                      'sample_type__sample_type']
-            df = pd.DataFrame(list(patinetdata), columns=field_names)
+        if sample_type and len(sample_type)>0 and len(sample_type[0])>0:
+            query &= Q(sample_type__in = sample_type)
 
-            df.to_csv(path_or_buf=response,index=False)
+        patinetdata = Sample.objects.filter(query).values_list('patient_id', 'patient__age', 'patient__sex',
+                                                  'patient__race', 'patient__code',
+                                                  'tissue__name', 'organ__name',
+                                                  'sample_type__sample_type').distinct()
+        response = HttpResponse(content_type='text/csv')
+        response['Content-Disposition'] = 'attachment;filename="patientdata.csv"'
+        field_names = ['patient_id', 'patient__age', 'patient__sex',
+                                                  'patient__race', 'patient__code',
+                                                  'tissue__name', 'organ__name',
+                                                  'sample_type__sample_type']
+        df = pd.DataFrame(list(patinetdata), columns=field_names)
 
-            return response
+        df.to_csv(path_or_buf=response,index=False)
+
+        return response
