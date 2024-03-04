@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a9f7fb05-30d0-47a2-ae31-0ea42f3d5214" name="Changes" comment="add all commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cbioportal/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cbioportal/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,14 +43,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "Django Server.cbioportal.executor": "Debug",
+    "Django Server.cbioportal.executor": "Run",
     "Python.tests.executor": "Debug",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "django.template.preview.state": "SHOW_EDITOR_AND_PREVIEW",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/karim/PycharmProjects/cbioportal/static/images",
+    "last_opened_file_path": "F:/Research/Thesis/AutismAtlasBrainFMRI",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -167,7 +168,8 @@
       <workItem from="1707504722927" duration="72699000" />
       <workItem from="1708199784644" duration="28470000" />
       <workItem from="1708448531316" duration="9683000" />
-      <workItem from="1708623444328" duration="23789000" />
+      <workItem from="1708623444328" duration="25512000" />
+      <workItem from="1708927120364" duration="1339000" />
     </task>
     <task id="LOCAL-00001" summary="add middleware basic auth">
       <option name="closed" value="true" />

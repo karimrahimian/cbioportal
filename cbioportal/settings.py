@@ -95,7 +95,6 @@ DATABASES = {
         'PASSWORD':"123456",
         'HOST': 'localhost',
         "PORT":3307
-
     }
 }
 

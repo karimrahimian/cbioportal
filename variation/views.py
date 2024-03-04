@@ -36,10 +36,10 @@ def register(request):
 
 def generate_data(request):
     fake_generator = FakerCbiooprtal()
-    # fake_generator.generate_fake_patient(count=100)
+    fake_generator.generate_fake_patient(count=100)
     # fake_generator.generate_gene(100)
     # fake_generator.generate_sample(1000)
-    fake_generator.generated_mutant_genes(800)
+    #fake_generator.generated_mutant_genes(800)
     # fake_generator.generate_study_sample(400)
     return HttpResponse("All data generated")
 
@@ -106,7 +106,7 @@ def api(request):
             query &= Q(patient__race__in = race)
         if gender:
             query &= Q(patient__sex__in = gender)
-        if organ_name:
+        if organ_name and len(organ_name)>0 and len(organ_name[0])>0:
             query &= Q(organ__name__in = organ_name)
         if sample_type and len(sample_type)>0 and len(sample_type[0])>0:
             query &= Q(sample_type__in = sample_type)
