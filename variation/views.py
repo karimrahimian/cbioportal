@@ -1,11 +1,12 @@
 import csv
 
 import pandas as pd
+from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from django.core import serializers
 from django.db.models import Count, Sum, Q
 from django.http import HttpResponse, JsonResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_exempt
 import json
 
@@ -26,7 +27,17 @@ def about(request):
     return render(request, 'about.html')
 
 
-def login(request):
+def sign_in(request):
+    if request.method == "POST":
+        username = request.POST['txtUserName']
+        password = request.POST['txtPassword']
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('index')
+        else:
+            context = {'message': 'Invalid username or password'}
+            return render(request, 'index.html',context)
     return render(request, 'login.html')
 
 

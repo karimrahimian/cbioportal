@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="{% static 'css/tabs.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'css/tables.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'css/cards.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" type="text/css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -21,10 +23,8 @@
         <nav>
             <ul>
                 <li><a href="{% url 'index' %}"><i class="fa fa-address-book"></i> Home</a></li>
-                <li><a href="about.html"> <i class="fa fa-user-circle"></i> About</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Dataset</a></li>
-                <li><a href="search.html">News</a></li>
+                <li><a href="{% url 'login' %}"> <i class="fa fa-user-circle"></i> login </a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
             </ul>
         </nav>
     </header>

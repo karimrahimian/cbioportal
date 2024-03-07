@@ -1,14 +1,33 @@
 {% extends 'template.html' %}
 {% load static %}
 {% block maincontent %}
-    <img src="{% static 'images/arm.png' %}" alt="">
-    <h1 style="color:tomato;">Login</h1>
-    <p style="background-color: blue; color:white"> Here is the about page </p>
-    <form action="">
-    Username:
-        <input type="text">
-    Password:
-        <input type="text">
-        <input type="submit" value="submit">
-    </form>
+<div class="mainlogin">
+	<div class="main">
+		<h1 class="h1"> Login into our site </h1>
+		<form action="{% url 'login' %}" method="post">
+            {% csrf_token %}
+			<label class="label" for="first">Username:</label>
+			<input class="input" type="text" id="first"
+				name="txtUserName"
+				placeholder="Enter your username" required>
+			<label class="label" for="last">Password:</label>
+			<input class="input" type="password" id="last"
+				name="txtPassword"
+				placeholder="Enter your password" required>
+
+			<label class="label" for="email">Email:</label>
+
+			<div class="wrap">
+				<button class="button" type="submit">
+			    	Login
+				</button>
+			</div>
+		</form>
+            <p>
+                {{ message }}
+            </p>
+	</div>
+
+</div>
+
 {% endblock %}
