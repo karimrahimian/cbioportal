@@ -1,7 +1,43 @@
 {% extends 'template.html' %}
 {% load static %}
 {% block maincontent %}
-    <h1 style="color:tomato;">About</h1>
-    <p style="background-color: purple; color:brown;"> Here is the about page </p>
+<div class="flex-container">
+
+    <div class="card" style="height: 700px">
+      <img src="{% static 'images/personal.png' %}" alt="Jane" style="width:80%">
+      <div class="container">
+        <h2>Karim Rahimian</h2>
+        <p class="title">Developer</p>
+        <p>He has 10 years of experience in different programming languages such as java, python, go .</p>
+        <p>karim.rahimian@gmail.com</p>
+        <p style="padding-left: 20px;padding-right: 20px"><button class="button">Contact</button></p>
+      </div>
+    </div>
+
+    <div class="card" style="height: 700px">
+      <img src="{% static 'images/personal.png' %}" alt="Mike" style="width:80%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        <p style="padding-left: 20px;padding-right: 20px"><button class="button">Contact</button></p>
+      </div>
+    </div>
+
+
+
+    <div class="card" style="height:700px">
+      <img src="{% static 'images/personal.png' %}" alt="John" style="width:80%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>john@example.com</p>
+        <p style="padding-left: 20px;padding-right: 20px"><button class="button">Contact</button></p>
+      </div>
+  </div>
+</div>
+
 
 {% endblock %}

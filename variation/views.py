@@ -48,11 +48,11 @@ def register(request):
 
 def generate_data(request):
     fake_generator = FakerCbiooprtal()
-    fake_generator.generate_fake_patient(count=100)
+    #fake_generator.generate_fake_patient(count=100)
     # fake_generator.generate_gene(100)
     # fake_generator.generate_sample(1000)
     #fake_generator.generated_mutant_genes(800)
-    # fake_generator.generate_study_sample(400)
+    fake_generator.generate_study_sample(400)
     return HttpResponse("All data generated")
 
 

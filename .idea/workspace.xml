@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a9f7fb05-30d0-47a2-ae31-0ea42f3d5214" name="Changes" comment="add all commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variation/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/variation/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/variation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/cards.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variation/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/variation/templates/about.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -177,7 +176,7 @@
       <workItem from="1708448531316" duration="9683000" />
       <workItem from="1708623444328" duration="25512000" />
       <workItem from="1708927120364" duration="1339000" />
-      <workItem from="1709808085199" duration="9519000" />
+      <workItem from="1709808085199" duration="12224000" />
     </task>
     <task id="LOCAL-00001" summary="add middleware basic auth">
       <option name="closed" value="true" />
@@ -259,6 +258,11 @@
           <url>file://$PROJECT_DIR$/variation/views.py</url>
           <line>111</line>
           <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/variation/views.py</url>
+          <line>49</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
