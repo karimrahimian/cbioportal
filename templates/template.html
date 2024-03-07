@@ -23,8 +23,13 @@
         <nav>
             <ul>
                 <li><a href="{% url 'index' %}"><i class="fa fa-address-book"></i> Home</a></li>
-                <li><a href="{% url 'login' %}"> <i class="fa fa-user-circle"></i> login </a></li>
                 <li><a href="{% url 'about' %}">About</a></li>
+                {% if not user.is_authenticated %}
+                    <li><a href="{% url 'login' %}"> <i class="fa fa-user-circle"></i> Login </a></li>
+                {% else %}
+                    <li><a href="{% url 'allpatient' %}"> <i class="fa fa-user-circle"></i> All patient </a></li>
+                    <li><a href="{% url 'logout' %}"> <i class="fa fa-user-circle"></i> Logout </a></li>
+                {% endif %}
             </ul>
         </nav>
     </header>

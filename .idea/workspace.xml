@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9f7fb05-30d0-47a2-ae31-0ea42f3d5214" name="Changes" comment="add all commit">
-      <change afterPath="$PROJECT_DIR$/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/variation/templates/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cbioportal/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cbioportal/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/variation/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/variation/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/variation/urls.py" afterDir="false" />
@@ -182,7 +177,7 @@
       <workItem from="1708448531316" duration="9683000" />
       <workItem from="1708623444328" duration="25512000" />
       <workItem from="1708927120364" duration="1339000" />
-      <workItem from="1709808085199" duration="6601000" />
+      <workItem from="1709808085199" duration="9519000" />
     </task>
     <task id="LOCAL-00001" summary="add middleware basic auth">
       <option name="closed" value="true" />
@@ -242,27 +237,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/variation/views.py</url>
-          <line>85</line>
+          <line>86</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/variation/views.py</url>
-          <line>90</line>
+          <line>91</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/variation/views.py</url>
-          <line>104</line>
+          <line>110</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/variation/views.py</url>
-          <line>134</line>
+          <line>140</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/variation/views.py</url>
-          <line>105</line>
+          <line>111</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>

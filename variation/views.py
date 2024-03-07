@@ -1,7 +1,7 @@
 import csv
 
 import pandas as pd
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.core import serializers
 from django.db.models import Count, Sum, Q
@@ -9,9 +9,8 @@ from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_exempt
 import json
-
 from .generate_fake_data.faker_bio import FakerCbiooprtal
-from .models import StudyType, Study, StudySample, SNP_Mutation, Sample, Snpmutant, Tissue
+from .models import StudyType, Study, StudySample, SNP_Mutation, Sample, Snpmutant, Tissue, Patient
 from .utils.graphtools import Graph
 
 
@@ -37,9 +36,11 @@ def sign_in(request):
             return redirect('index')
         else:
             context = {'message': 'Invalid username or password'}
-            return render(request, 'index.html',context)
+            return render(request, 'login.html',context)
     return render(request, 'login.html')
-
+def log_out(request):
+    logout(request)
+    return redirect('index')
 
 def register(request):
     return render(request, 'register.html')
@@ -100,6 +101,11 @@ def tissuelist(request):
         json_data = json.dumps(list(tissues))
         return HttpResponse(json_data, content_type='application/json')
 
+def allpatient(request):
+    if request.method == 'GET':
+        tissues = Patient.objects.all().values()
+        json_data = json.dumps(list(tissues))
+        return HttpResponse(json_data, content_type='application/json')
 @csrf_exempt
 def api(request):
     query = Q()
